@@ -44,6 +44,8 @@
       <div class="nav-group-title">Leitstelle einrichten</div>
       <a class="nav-link" href="verwaltung.html">Verwaltung (Admin)</a>
       <a class="nav-link" href="rollen.html">Rollen &amp; Rechte</a>
+      <a class="nav-link" href="silent-print-einrichten.html">Alarmdruck einrichten</a>
+      <a class="nav-link" href="ntfy-einrichten.html">Push-Benachrichtigungen</a>
     </div>
     <div class="nav-group">
       <div class="nav-group-title">Übungsbetrieb</div>
@@ -65,31 +67,31 @@
       <h1 class="page-title">Häufige Fragen</h1>
       <p class="page-lede">Die häufigsten Fragen rund um die Benutzung der ILS Eggingen.</p>
 
-      <h2>Ist das ein echtes Notrufsystem?</h2>
+      <h2 id="ist-das-ein-echtes-notrufsystem">Ist das ein echtes Notrufsystem?</h2>
       <p>Nein. ILS Eggingen ist eine Übungsleitstelle für Simulationszwecke, z. B. in der Jugendfeuerwehr oder bei Veranstaltungen. Bei einem echten Notfall immer die 112 wählen.</p>
 
-      <h2>Ich habe mein Passwort vergessen. Was tun?</h2>
+      <h2 id="ich-habe-mein-passwort-vergessen-was-tun">Ich habe mein Passwort vergessen. Was tun?</h2>
       <p>Wende dich an den Admin eurer Leitstelle – er kann dein Passwort in der <a href="verwaltung.html#benutzer">Benutzerverwaltung</a> zurücksetzen. Bist du selbst der Admin und kommst nicht mehr rein, hilft <a href="mailto:system@ils.ulm-eggingen.de">system@ils.ulm-eggingen.de</a> weiter.</p>
 
-      <h2>Warum kann ich ein Fahrzeug nicht auswählen?</h2>
+      <h2 id="warum-kann-ich-ein-fahrzeug-nicht-auswaehlen">Warum kann ich ein Fahrzeug nicht auswählen?</h2>
       <p>Entweder ist es als „außer Dienst“ (S6) markiert, oder es ist gerade einem anderen laufenden Einsatz zugeteilt. Beides wird direkt am Fahrzeug als Hinweistext angezeigt. Details unter <a href="fahrzeuge.html">Fahrzeuge &amp; Status</a>.</p>
 
-      <h2>Der Alarmdruck kommt nicht aus dem Drucker – woran liegt das?</h2>
-      <p>Der Alarmdruck funktioniert nur, wenn auf dem PC die lokale <strong>Silent-Print-App</strong> läuft und mit dem Browser verbunden ist. Prüfe in den <a href="verwaltung.html#einstellungen">Einstellungen → Alarmdruck</a>, ob dort „Verbunden“ angezeigt wird, und nutze den Button „Testseite drucken“. Bleibt die App unerreichbar, wird stillschweigend kein Alarmdruck erzeugt.</p>
+      <h2 id="der-alarmdruck-kommt-nicht-aus-dem-drucker-woran-liegt-das">Der Alarmdruck kommt nicht aus dem Drucker – woran liegt das?</h2>
+      <p>Der Alarmdruck funktioniert nur, wenn auf dem PC die lokale <strong>Silent-Print-App</strong> läuft und mit dem Browser verbunden ist. Prüfe in den <a href="verwaltung.html#einstellungen">Einstellungen → Alarmdruck</a>, ob dort „Verbunden“ angezeigt wird, und nutze den Button „Testseite drucken“. Bleibt die App unerreichbar, wird stillschweigend kein Alarmdruck erzeugt. Installationsanleitung: <a href="silent-print-einrichten.html">Alarmdruck einrichten</a>.</p>
 
-      <h2>Wie bekomme ich Alarme aufs Handy?</h2>
-      <p>Über <strong>Push-Benachrichtigungen (ntfy)</strong>: In den <a href="verwaltung.html#einstellungen">Einstellungen</a> ist ein ntfy-Topic für eure Leitstelle hinterlegt. Installiere die kostenlose ntfy-App und abonniere das dort genannte Topic – schon bekommst du bei jeder Alarmierung eine Push-Nachricht.</p>
+      <h2 id="wie-bekomme-ich-alarme-aufs-handy">Wie bekomme ich Alarme aufs Handy?</h2>
+      <p>Über <strong>Push-Benachrichtigungen (ntfy)</strong>: In den <a href="verwaltung.html#einstellungen">Einstellungen</a> ist ein ntfy-Topic für eure Leitstelle hinterlegt. Installiere die kostenlose ntfy-App und abonniere das dort genannte Topic – schon bekommst du bei jeder Alarmierung eine Push-Nachricht. Schritt-für-Schritt für Android und iOS: <a href="ntfy-einrichten.html">Push-Benachrichtigungen (ntfy)</a>.</p>
 
-      <h2>Kann ich mich mit dem Smartphone anmelden?</h2>
+      <h2 id="kann-ich-mich-mit-dem-smartphone-anmelden">Kann ich mich mit dem Smartphone anmelden?</h2>
       <p>Ja, die Anwendung selbst funktioniert grundsätzlich auch im mobilen Browser. Die drei Arbeitsplätze (Dashboard, Einsatzerfassung, Alarmmonitor) sind aber vor allem für größere Bildschirme gedacht – für den mobilen Alltag empfiehlt sich eher der Push-Kanal über ntfy.</p>
 
-      <h2>Wo finde ich vergangene Einsätze?</h2>
+      <h2 id="wo-finde-ich-vergangene-einsaetze">Wo finde ich vergangene Einsätze?</h2>
       <p>Auf dem <a href="dashboard.html">Dashboard</a> über den Link „Einsatz-Historie anzeigen“. Dort lässt sich zu jedem Einsatz ein PDF-Bericht herunterladen. Details unter <a href="einsatz-bearbeiten.html">Bericht &amp; Einsatz abschließen</a>.</p>
 
-      <h2>Ich habe versehentlich ein falsches Fahrzeug alarmiert – was jetzt?</h2>
+      <h2 id="ich-habe-versehentlich-ein-falsches-fahrzeug-alarmiert-was-jetzt">Ich habe versehentlich ein falsches Fahrzeug alarmiert – was jetzt?</h2>
       <p>Öffne den Einsatz über das Dashboard, entferne das Fahrzeug im Bearbeiten-Fenster und alarmiere bei Bedarf über „Fahrzeuge nachalarmieren“ das richtige. Details unter <a href="einsatz-bearbeiten.html">Bericht &amp; Einsatz abschließen</a>.</p>
 
-      <h2>Diese Doku ist nicht aktuell oder etwas fehlt – wie melde ich das?</h2>
+      <h2 id="diese-doku-ist-nicht-aktuell-oder-etwas-fehlt-wie-melde-ich-das">Diese Doku ist nicht aktuell oder etwas fehlt – wie melde ich das?</h2>
       <p>Diese Dokumentation liegt öffentlich auf GitHub. Über die GitHub-Seite des Projekts kannst du Fehler melden oder Ergänzungen vorschlagen. Bei allgemeinen Fragen zur Nutzung hilft auch <a href="mailto:system@ils.ulm-eggingen.de">system@ils.ulm-eggingen.de</a> weiter.</p>
 
       <div class="pagenav">
@@ -97,6 +99,7 @@
         <a class="next" href="index.html"><span class="pn-label">Zurück zum Start</span><span class="pn-title">Übersicht →</span></a>
       </div>
     </div>
+    <aside class="page-toc" id="page-toc"></aside>
   </main>
 </div>
 

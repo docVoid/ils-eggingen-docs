@@ -44,6 +44,8 @@
       <div class="nav-group-title">Leitstelle einrichten</div>
       <a class="nav-link" href="verwaltung.html">Verwaltung (Admin)</a>
       <a class="nav-link" href="rollen.html">Rollen &amp; Rechte</a>
+      <a class="nav-link" href="silent-print-einrichten.html">Alarmdruck einrichten</a>
+      <a class="nav-link" href="ntfy-einrichten.html">Push-Benachrichtigungen</a>
     </div>
     <div class="nav-group">
       <div class="nav-group-title">Übungsbetrieb</div>
@@ -65,12 +67,12 @@
       <h1 class="page-title">Alarmmonitor</h1>
       <p class="page-lede">Der Alarmmonitor ist für den großen Bildschirm im Gerätehaus gedacht – er läuft dauerhaft im Hintergrund und wechselt automatisch zwischen Ruhezustand und Alarm-Ansicht.</p>
 
-      <h2>Standby: der Ruhezustand</h2>
+      <h2 id="standby-der-ruhezustand">Standby: der Ruhezustand</h2>
       <p>Solange kein Einsatz läuft, zeigt der Monitor: Uhrzeit und Datum, den Status aller Fahrzeuge, das aktuelle Wetter, das Logo der Wache sowie aktuelle Mitteilungen.</p>
 
       <figure class="shot">
         <img src="assets/img/monitor-standby.png" alt="Alarmmonitor im Ruhezustand mit Fahrzeugstatus, Uhrzeit, Wetter und Wachenlogo" loading="lazy" />
-        <figcaption>Standby-Ansicht des Alarmmonitors – hier vor dem Aktivieren des Tons noch mit Overlay „Audio aktivieren“.</figcaption>
+        <figcaption>Standby-Ansicht des Alarmmonitors mit Fahrzeugstatus, Wetter und Wachenlogo.</figcaption>
       </figure>
 
       <div class="callout callout-info">
@@ -81,7 +83,7 @@
         </div>
       </div>
 
-      <h2>Alarm: wenn ein Einsatz eingeht</h2>
+      <h2 id="alarm-wenn-ein-einsatz-eingeht">Alarm: wenn ein Einsatz eingeht</h2>
       <p>Sobald ein Einsatz alarmiert wird, wechselt der Monitor automatisch und ohne Zutun in die Alarm-Ansicht: Stichwort, Einsatznummer, Adresse und Bemerkungen groß und gut lesbar, dazu eine Anfahrtskarte mit Route von der Wache zum Einsatzort, eine Satellitenansicht der Zieladresse, die alarmierten Fahrzeuge sowie ein Einsatzdauer-Timer. Je nach Konfiguration wird der Alarm zusätzlich per Sprachausgabe angesagt.</p>
 
       <figure class="shot">
@@ -91,7 +93,7 @@
 
       <p>Werden während des laufenden Einsatzes weitere Fahrzeuge nachalarmiert, aktualisiert sich die Ansicht live und macht per Hervorhebung auf die Änderung aufmerksam. Sobald der Einsatz abgeschlossen wird, springt der Monitor automatisch zurück in den Ruhezustand.</p>
 
-      <h2>Einrichtung im Gerätehaus</h2>
+      <h2 id="einrichtung-im-geraetehaus">Einrichtung im Gerätehaus</h2>
       <p>Der Alarmmonitor ist als eigener Tab bzw. eigenes Fenster über die <a href="erste-schritte.html">Monitorauswahl</a> zu öffnen – am besten im Vollbildmodus (F11) auf einem dauerhaft eingeschalteten Bildschirm oder TV im Gerätehaus. Das Design bleibt hier bewusst immer dunkel, unabhängig von der persönlichen Theme-Einstellung, damit es auch nachts gut lesbar und blendfrei ist.</p>
 
       <div class="pagenav">
@@ -99,6 +101,7 @@
         <a class="next" href="dashboard.html"><span class="pn-label">Weiter</span><span class="pn-title">Dashboard →</span></a>
       </div>
     </div>
+    <aside class="page-toc" id="page-toc"></aside>
   </main>
 </div>
 

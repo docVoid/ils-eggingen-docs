@@ -44,6 +44,8 @@
       <div class="nav-group-title">Leitstelle einrichten</div>
       <a class="nav-link" href="verwaltung.html">Verwaltung (Admin)</a>
       <a class="nav-link" href="rollen.html">Rollen &amp; Rechte</a>
+      <a class="nav-link" href="silent-print-einrichten.html">Alarmdruck einrichten</a>
+      <a class="nav-link" href="ntfy-einrichten.html">Push-Benachrichtigungen</a>
     </div>
     <div class="nav-group">
       <div class="nav-group-title">Übungsbetrieb</div>
@@ -65,10 +67,10 @@
       <h1 class="page-title">Fahrzeuge &amp; FMS-Status</h1>
       <p class="page-lede">Jedes Fahrzeug hat einen Funkmeldesystem-Status (FMS), der zeigt, ob es einsatzbereit ist. Der Status wird direkt über die Fahrzeugkarte auf dem Dashboard geändert.</p>
 
-      <h2>Status ändern</h2>
+      <h2 id="status-aendern">Status ändern</h2>
       <p>Auf dem <a href="dashboard.html">Dashboard</a> siehst du im Kasten „Aktuelle Fahrzeuge“ alle Fahrzeuge deiner Leitstelle mit Namen, Funkrufname und aktuellem Status. Ein Klick auf eine Fahrzeugkarte öffnet die Statusauswahl. Diese Funktion steht <strong>Disponent und Admin</strong> zur Verfügung; Betrachter und ReadOnly sehen den Status nur.</p>
 
-      <h2>Die FMS-Status im Überblick</h2>
+      <h2 id="die-fms-status-im-ueberblick">Die FMS-Status im Überblick</h2>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Status</th><th>Bedeutung</th><th>Alarmierbar?</th></tr></thead>
@@ -87,7 +89,7 @@
       </div>
       <p>Für die Alarmierung sind vor allem <strong>S2 (frei auf Wache)</strong> und <strong>S1 (frei über Funk)</strong> relevant – nur solche Fahrzeuge lassen sich in der Einsatzerfassung auswählen. Ändert ein Disponent den Status während eines laufenden Einsatzes (z. B. auf „am Einsatzort“), wird das automatisch in der Fahrzeug-Zeitleiste des Einsatzberichts festgehalten.</p>
 
-      <h2>Warum ist ein Fahrzeug gesperrt?</h2>
+      <h2 id="warum-ist-ein-fahrzeug-gesperrt">Warum ist ein Fahrzeug gesperrt?</h2>
       <p>Ein Fahrzeug lässt sich in zwei Fällen <strong>nicht</strong> alarmieren – in der Einsatzerfassung erscheint dann eine kurze Erklärung direkt am Fahrzeug:</p>
       <ul class="lead-list">
         <li><strong>„Fahrzeug ist außer Dienst und kann nicht alarmiert werden.“</strong> — Status S6.</li>
@@ -95,7 +97,7 @@
       </ul>
       <p>Ein blockiertes Fahrzeug wird erst wieder verfügbar, wenn sein laufender Einsatz abgeschlossen wird (siehe <a href="einsatz-bearbeiten.html">Bericht &amp; Einsatz abschließen</a>) oder es manuell aus dem Einsatz entfernt wird.</p>
 
-      <h2>Fahrzeuge anlegen &amp; bearbeiten</h2>
+      <h2 id="fahrzeuge-anlegen-und-bearbeiten">Fahrzeuge anlegen &amp; bearbeiten</h2>
       <p>Neue Fahrzeuge, Namen und Funkrufnamen werden von Administratorinnen und Administratoren in der <a href="verwaltung.html#fahrzeuge">Verwaltung unter „Fahrzeuge“</a> gepflegt.</p>
 
       <div class="pagenav">
@@ -103,6 +105,7 @@
         <a class="next" href="alarmmonitor.html"><span class="pn-label">Weiter</span><span class="pn-title">Alarmmonitor →</span></a>
       </div>
     </div>
+    <aside class="page-toc" id="page-toc"></aside>
   </main>
 </div>
 

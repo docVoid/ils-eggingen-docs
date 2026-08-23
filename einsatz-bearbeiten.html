@@ -44,6 +44,8 @@
       <div class="nav-group-title">Leitstelle einrichten</div>
       <a class="nav-link" href="verwaltung.html">Verwaltung (Admin)</a>
       <a class="nav-link" href="rollen.html">Rollen &amp; Rechte</a>
+      <a class="nav-link" href="silent-print-einrichten.html">Alarmdruck einrichten</a>
+      <a class="nav-link" href="ntfy-einrichten.html">Push-Benachrichtigungen</a>
     </div>
     <div class="nav-group">
       <div class="nav-group-title">Übungsbetrieb</div>
@@ -65,7 +67,7 @@
       <h1 class="page-title">Bericht &amp; Einsatz abschließen</h1>
       <p class="page-lede">Solange ein Einsatz läuft, kannst du ihn jederzeit bearbeiten: Fahrzeuge nachalarmieren, Angaben korrigieren und am Ende einen Bericht schreiben, bevor du ihn abschließt.</p>
 
-      <h2>Einsatz öffnen</h2>
+      <h2 id="einsatz-oeffnen">Einsatz öffnen</h2>
       <p>Auf dem <a href="dashboard.html">Dashboard</a> klickst du im Kasten „Laufende Einsätze“ auf einen Einsatz bzw. auf „Bericht schreiben &amp; Einsatz abschließen“. Es öffnet sich ein Bearbeiten-Fenster mit allen Einsatzdaten.</p>
 
       <figure class="shot">
@@ -73,10 +75,10 @@
         <figcaption>Einsatz bearbeiten – alle Felder aus der Erfassung lassen sich hier nachträglich korrigieren.</figcaption>
       </figure>
 
-      <h2>Fahrzeuge nachalarmieren</h2>
+      <h2 id="fahrzeuge-nachalarmieren">Fahrzeuge nachalarmieren</h2>
       <p>Weiter unten im Fenster siehst du die <strong>zugewiesenen Fahrzeuge</strong> mit Status und Zeitstempel, sowie den Abschnitt <strong>„Fahrzeuge nachalarmieren“</strong>. Ein Klick auf ein verfügbares Fahrzeug fügt es dem Einsatz hinzu, benachrichtigt alle Monitore erneut und löst bei Bedarf einen erneuten Alarmdruck aus – markiert als Aktualisierung. Bereits gebundene oder außer Dienst befindliche Fahrzeuge sind auch hier gesperrt.</p>
 
-      <h2>Einsatzbericht schreiben</h2>
+      <h2 id="einsatzbericht-schreiben">Einsatzbericht schreiben</h2>
       <p>Ganz unten findest du das Feld <strong>„Einsatzbericht“</strong> – ein freies Textfeld für den Verlauf, die Maßnahmen und das Ergebnis des Einsatzes. Dieser Bericht ist <strong>Pflicht</strong>: Ein Einsatz lässt sich erst abschließen, wenn hier ein Text steht.</p>
 
       <figure class="shot">
@@ -92,7 +94,7 @@
         </div>
       </div>
 
-      <h2>Einsatz abschließen</h2>
+      <h2 id="einsatz-abschliessen">Einsatz abschließen</h2>
       <ol class="step-list">
         <li>
           <h3>„Einsatz abschließen“ klicken</h3>
@@ -108,7 +110,7 @@
         </li>
       </ol>
 
-      <h2>Einsatz-Historie &amp; PDF-Export</h2>
+      <h2 id="einsatz-historie-und-pdf-export">Einsatz-Historie &amp; PDF-Export</h2>
       <p>Über den Link „Einsatz-Historie anzeigen“ auf dem Dashboard siehst du alle vergangenen und laufenden Einsätze. Zu jedem Einsatz kannst du über das Download-Symbol einen fertig formatierten <strong>PDF-Einsatzbericht</strong> erzeugen – mit Einsatznummer, allen Stammdaten, der Fahrzeug-Zeitleiste und deinem geschriebenen Bericht.</p>
 
       <figure class="shot">
@@ -116,8 +118,43 @@
         <figcaption>Einsatz-Historie – Bearbeiten- und Download-Symbol rechts an jedem Eintrag.</figcaption>
       </figure>
 
+      <h3>Beispiel eines PDF-Einsatzberichts</h3>
+      <p>So sieht der heruntergeladene Bericht aus – hier für den bereits abgeschlossenen Beispieleinsatz von oben:</p>
+      <div class="doc-sample">
+        <div class="ds-head">
+          <span class="ds-title">Einsatzbericht</span>
+          <span class="ds-meta">20260823-001</span>
+        </div>
+        <dl>
+          <dt>Kategorie</dt><dd>Brand</dd>
+          <dt>Meldebild</dt><dd class="strong">B2 Brand Container</dd>
+          <dt>Einsatzort</dt><dd class="strong">Dorfstraße 12, 89179 Eggingen</dd>
+          <dt>Erstellt</dt><dd>23.8.2026, 19:17:57</dd>
+          <dt>Abgeschlossen</dt><dd>23.8.2026, 19:25:30</dd>
+          <dt>Status</dt><dd>Abgeschlossen</dd>
+          <dt>Ortshinweis</dt><dd>Zufahrt über Hofeinfahrt, Hund im Garten</dd>
+          <dt>Meldender</dt><dd>Max Mustermann</dd>
+          <dt>Telefon</dt><dd>0731 123456</dd>
+          <dt>Meldeweg</dt><dd>Telefon 112</dd>
+          <dt>Stichwort</dt><dd>Brand – Kellerbrand, starke Rauchentwicklung</dd>
+          <dt>Bemerkungen</dt><dd>Bewohner im Haus, evtl. noch Person im Gebäude</dd>
+        </dl>
+        <div class="ds-subhead">Fahrzeuge:</div>
+        <table>
+          <thead><tr><th>EM</th><th>alarmiert</th><th>Wache ab</th><th>EOrt an</th><th>ZOrt ab</th><th>Ende</th></tr></thead>
+          <tbody>
+            <tr><td>Florian Ulm 9/42</td><td>19:17:57</td><td>19:18:30 (00:00:33)</td><td>19:20:45 (00:02:48)</td><td>19:24:10 (00:06:13)</td><td>19:25:30 (00:07:33)</td></tr>
+            <tr><td>Florian Ulm 10/19</td><td>19:17:57</td><td>19:18:52 (00:00:55)</td><td>19:21:03 (00:03:06)</td><td>19:24:40 (00:06:43)</td><td>19:25:30 (00:07:33)</td></tr>
+          </tbody>
+        </table>
+        <div class="ds-subhead">Bericht:</div>
+        <div class="ds-report">
+          <p>Kellerbrand durch defekten Trockner. Brand mit einem C-Rohr abgelöscht, Nachlöscharbeiten und Belüftung des Kellers. Keine Personen verletzt, Rauchwarnmelder hat ausgelöst und die Bewohner rechtzeitig gewarnt. Einsatzstelle an den Eigentümer übergeben.</p>
+        </div>
+        <div class="ds-footer">ILS Eggingen · Einsatzbericht generiert am 23.8.2026, 20:05:12</div>
+      </div>
+
       <div class="callout callout-info">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
         <div>
           <span class="callout-title">Objekt- &amp; Ortshinweise</span>
           <p>Notizen aus „Bemerkungen zum Einsatzort“ (Zufahrt, Lage, Besonderheiten) tauchen automatisch auf dem Alarmdruck, im PDF-Bericht und in Push-Benachrichtigungen auf – du musst sie nirgends doppelt eintragen.</p>
@@ -129,6 +166,7 @@
         <a class="next" href="fahrzeuge.html"><span class="pn-label">Weiter</span><span class="pn-title">Fahrzeuge &amp; Status →</span></a>
       </div>
     </div>
+    <aside class="page-toc" id="page-toc"></aside>
   </main>
 </div>
 

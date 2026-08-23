@@ -60,5 +60,45 @@
         a.classList.add("active");
       }
     });
+
+    // "Auf dieser Seite" — build from h2 headings in the main content
+    var main = document.querySelector("main.main");
+    var toc = document.getElementById("page-toc");
+    if (main && toc) {
+      var headings = main.querySelectorAll(".content h2[id]");
+      if (headings.length >= 2) {
+        var title = document.createElement("div");
+        title.className = "toc-title";
+        title.textContent = "Auf dieser Seite";
+        toc.appendChild(title);
+        var links = [];
+        headings.forEach(function (h) {
+          var a = document.createElement("a");
+          a.href = "#" + h.id;
+          a.textContent = h.textContent;
+          toc.appendChild(a);
+          links.push({ id: h.id, el: a });
+        });
+        main.classList.add("has-toc");
+        toc.classList.add("is-visible");
+
+        if ("IntersectionObserver" in window) {
+          var observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                var link = links.find(function (l) { return l.id === entry.target.id; });
+                if (!link) return;
+                if (entry.isIntersecting) {
+                  links.forEach(function (l) { l.el.classList.remove("active"); });
+                  link.el.classList.add("active");
+                }
+              });
+            },
+            { rootMargin: "-80px 0px -70% 0px" }
+          );
+          headings.forEach(function (h) { observer.observe(h); });
+        }
+      }
+    }
   });
 })();
