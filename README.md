@@ -1,8 +1,8 @@
 # ILS Eggingen – Dokumentation
 
-Benutzerhandbuch für die [Integrierte Leitstelle Eggingen](https://ils.ulm-eggingen.de) – für alle, die das System **benutzen**: Einsatzkräfte, Disponentinnen und Disponenten sowie Administratoren der angeschlossenen Feuerwehren.
+Benutzerhandbuch für [ILS Eggingen](https://ils.ulm-eggingen.de), eine **Übungsleitstelle** zum Simulieren von Alarmierung und Einsatzführung (z. B. für Jugendfeuerwehren, Ausbildung, Tage der offenen Tür) – für alle, die das System **benutzen**.
 
-**Es geht hier nicht um Betrieb, Server oder Docker** – das ist bewusst kein Teil dieser Doku. Stattdessen: Zugang beantragen, Einsätze erfassen und alarmieren, Fahrzeuge verwalten, Berichte schreiben und mehr – Schritt für Schritt, mit Screenshots.
+**Es geht hier nicht um Betrieb, Server oder Docker** – das ist bewusst kein Teil dieser Doku. Stattdessen: Zugang beantragen, die eigene Leitstelle einrichten, Übungseinsätze erfassen und alarmieren, Berichte schreiben und mehr – Schritt für Schritt, mit Screenshots.
 
 🔗 **Live:** https://docvoid.github.io/ils-eggingen-docs/ (perspektivisch auch unter `ils.ulm-eggingen.de/doku`)
 
