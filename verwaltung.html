@@ -184,6 +184,57 @@
             </figcaption>
           </figure>
 
+          <h3 id="stichworte-csv-format">Format der CSV-Datei</h3>
+          <p>
+            Kein Komma, kein Semikolon, keine Kopfzeile – einfach eine
+            Kategorie pro Zeile, gefolgt von ihren Stichworten (je eins pro
+            Zeile), bis die nächste Kategorie beginnt. Leerzeilen dazwischen
+            sind rein optisch und werden beim Import ignoriert.
+          </p>
+          <ul class="lead-list">
+            <li>
+              <strong>Kategorie-Zeilen</strong> müssen exakt (Groß-/
+              Kleinschreibung ist egal)
+              <code>Brand</code>, <code>Hilfeleistung</code>,
+              <code>Rettung</code> oder <code>Sonstiges</code> lauten – andere
+              Kategorienamen gibt es nicht.
+            </li>
+            <li>
+              Zeilen <strong>vor</strong> der ersten erkannten Kategorie
+              werden stillschweigend übersprungen.
+            </li>
+            <li>
+              Stichworte, die es in ihrer Kategorie schon gibt, werden beim
+              Import übersprungen statt doppelt angelegt.
+            </li>
+            <li>
+              Die Datei sollte <strong>UTF-8</strong> gespeichert sein (Excel-
+              Exporte im Windows-Format werden ebenfalls erkannt).
+            </li>
+          </ul>
+          <pre><code>Brand
+B0 Brand
+B2 Brand Gebäude
+
+Hilfeleistung
+H0 Hilfeleistung
+H2 Hilfeleistung
+
+Rettung
+R0 Rettung
+R2 Rettung
+
+Sonstiges
+S Testeinsatz Fw</code></pre>
+          <p>
+            <a
+              class="btn btn-ghost btn-sm"
+              href="assets/files/einsatzstichworte-beispiel.csv"
+              download
+              >Beispieldatei herunterladen (.csv)</a
+            >
+          </p>
+
           <h2 id="einstellungen">Einstellungen</h2>
           <p>Zentrale Einstellungen der Leitstelle, in Abschnitten:</p>
           <ul class="lead-list">
