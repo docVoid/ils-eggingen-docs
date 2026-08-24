@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Einsatz erfassen &amp; alarmieren – ILS Eggingen Doku</title>
 <meta name="description" content="Simulierten Notruf aufnehmen, Adresse und Stichwort erfassen, Fahrzeuge auswählen und den Alarmdruck auslösen." />
+<link rel="canonical" href="https://docvoid.github.io/ils-eggingen-docs/einsatz-erfassen.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="ILS Eggingen Doku" />
+<meta property="og:title" content="Einsatz erfassen &amp; alarmieren – ILS Eggingen Doku" />
+<meta property="og:description" content="Simulierten Notruf aufnehmen, Adresse und Stichwort erfassen, Fahrzeuge auswählen und den Alarmdruck auslösen." />
+<meta property="og:url" content="https://docvoid.github.io/ils-eggingen-docs/einsatz-erfassen.html" />
+<meta property="og:image" content="https://docvoid.github.io/ils-eggingen-docs/assets/img/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="de_DE" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Einsatz erfassen &amp; alarmieren – ILS Eggingen Doku" />
+<meta name="twitter:description" content="Simulierten Notruf aufnehmen, Adresse und Stichwort erfassen, Fahrzeuge auswählen und den Alarmdruck auslösen." />
+<meta name="twitter:image" content="https://docvoid.github.io/ils-eggingen-docs/assets/img/og-image.jpg" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f5fe0'/%3E%3Cpath d='M16 7v18M7 16h18' stroke='white' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E" />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -129,35 +143,13 @@
       </div>
 
       <h3>Beispiel einer Alarmdepesche</h3>
-      <p>So sieht ein ausgedruckter Alarmdruck aus – kurz und auf das Wesentliche reduziert:</p>
-      <div class="doc-sample">
-        <div class="ds-head">
-          <span class="ds-title">ALARMDRUCK</span>
-          <span class="ds-meta">23.8.2026, 19:17:57</span>
-        </div>
-        <dl>
-          <dt>Einsatz-Nr.</dt><dd>20260823-001</dd>
-          <dt>Meldebild</dt><dd class="strong">B2 Brand Container</dd>
-          <dt>Fahrzeuge</dt><dd class="strong">Florian Ulm 9/42, Florian Ulm 10/19</dd>
-          <dt>Stichwort</dt><dd>Brand – Kellerbrand, starke Rauchentwicklung</dd>
-          <dt>Adresse</dt><dd class="strong">Dorfstraße 12, 89179 Eggingen</dd>
-          <dt>Ortshinweis</dt><dd>Zufahrt über Hofeinfahrt, Hund im Garten</dd>
-          <dt>Meldender</dt><dd>Max Mustermann</dd>
-          <dt>Bemerkungen</dt><dd>Bewohner im Haus, evtl. noch Person im Gebäude</dd>
-        </dl>
-        <div class="ds-subhead">Alarmierte Fahrzeuge:</div>
-        <table>
-          <thead><tr><th>EM</th><th>alarmiert</th><th>Wache ab</th><th>EOrt an</th><th>ZOrt ab</th><th>Ende</th></tr></thead>
-          <tbody>
-            <tr><td>Florian Ulm 9/42</td><td>19:17:57</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
-            <tr><td>Florian Ulm 10/19</td><td>19:17:57</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
-          </tbody>
-        </table>
-        <div class="ds-footer">Erstellt: 23.8.2026, 19:17:57 · ILS Eggingen</div>
-      </div>
+      <p>So sieht ein ausgedruckter Alarmdruck aus – kurz und auf das Wesentliche reduziert (echtes Beispiel aus einem Testalarm):</p>
+      <figure class="shot">
+        <img src="assets/img/beispiel-alarmdruck.png" alt="Beispiel eines echten Alarmdrucks mit Einsatz-Nr., Meldebild, Fahrzeugen, Stichwort, Adresse und alarmierten Fahrzeugen" loading="lazy" />
+      </figure>
 
       <h2 id="was-passiert-danach">Was passiert danach?</h2>
-      <p>Der Einsatz erscheint sofort auf dem <a href="dashboard.html">Dashboard</a> unter „Laufende Einsätze“ und auf dem <a href="alarmmonitor.html">Alarmmonitor</a> im Gerätehaus. Von dort – oder direkt wieder aus der Einsatzerfassung – kannst du später weitere Fahrzeuge nachalarmieren und irgendwann den Einsatzbericht schreiben: siehe <a href="einsatz-bearbeiten.html">Bericht &amp; Einsatz abschließen</a>.</p>
+      <p>Der Einsatz erscheint sofort auf dem <a href="dashboard.html">Dashboard</a> unter „Laufende Einsätze“ und auf dem <a href="alarmmonitor.html">Alarmmonitor</a> im Gerätehaus. Vom Dashboard aus kannst du den Einsatz später öffnen, um weitere Fahrzeuge nachzualarmieren und irgendwann den Einsatzbericht zu schreiben: siehe <a href="einsatz-bearbeiten.html">Bericht &amp; Einsatz abschließen</a>.</p>
 
       <div class="pagenav">
         <a class="prev" href="ntfy-einrichten.html"><span class="pn-label">Zurück</span><span class="pn-title">← Push-Benachrichtigungen</span></a>

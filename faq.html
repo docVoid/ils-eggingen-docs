@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Häufige Fragen – ILS Eggingen Doku</title>
 <meta name="description" content="Antworten auf häufige Fragen zur ILS Eggingen: Zugangsdaten, Alarmdruck, Push-Benachrichtigungen und mehr." />
+<link rel="canonical" href="https://docvoid.github.io/ils-eggingen-docs/faq.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="ILS Eggingen Doku" />
+<meta property="og:title" content="Häufige Fragen – ILS Eggingen Doku" />
+<meta property="og:description" content="Antworten auf häufige Fragen zur ILS Eggingen: Zugangsdaten, Alarmdruck, Push-Benachrichtigungen und mehr." />
+<meta property="og:url" content="https://docvoid.github.io/ils-eggingen-docs/faq.html" />
+<meta property="og:image" content="https://docvoid.github.io/ils-eggingen-docs/assets/img/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="de_DE" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Häufige Fragen – ILS Eggingen Doku" />
+<meta name="twitter:description" content="Antworten auf häufige Fragen zur ILS Eggingen: Zugangsdaten, Alarmdruck, Push-Benachrichtigungen und mehr." />
+<meta name="twitter:image" content="https://docvoid.github.io/ils-eggingen-docs/assets/img/og-image.jpg" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f5fe0'/%3E%3Cpath d='M16 7v18M7 16h18' stroke='white' stroke-width='3.4' stroke-linecap='round'/%3E%3C/svg%3E" />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -67,32 +81,44 @@
       <h1 class="page-title">Häufige Fragen</h1>
       <p class="page-lede">Die häufigsten Fragen rund um die Benutzung der ILS Eggingen.</p>
 
-      <h2 id="ist-das-ein-echtes-notrufsystem">Ist das ein echtes Notrufsystem?</h2>
-      <p>Nein. ILS Eggingen ist eine Übungsleitstelle für Simulationszwecke, z. B. in der Jugendfeuerwehr oder bei Veranstaltungen. Bei einem echten Notfall immer die 112 wählen.</p>
-
-      <h2 id="ich-habe-mein-passwort-vergessen-was-tun">Ich habe mein Passwort vergessen. Was tun?</h2>
-      <p>Wende dich an den Admin eurer Leitstelle – er kann dein Passwort in der <a href="verwaltung.html#benutzer">Benutzerverwaltung</a> zurücksetzen. Bist du selbst der Admin und kommst nicht mehr rein, hilft <a href="mailto:system@ils.ulm-eggingen.de">system@ils.ulm-eggingen.de</a> weiter.</p>
-
-      <h2 id="warum-kann-ich-ein-fahrzeug-nicht-auswaehlen">Warum kann ich ein Fahrzeug nicht auswählen?</h2>
-      <p>Entweder ist es als „außer Dienst“ (S6) markiert, oder es ist gerade einem anderen laufenden Einsatz zugeteilt. Beides wird direkt am Fahrzeug als Hinweistext angezeigt. Details unter <a href="fahrzeuge.html">Fahrzeuge &amp; Status</a>.</p>
-
-      <h2 id="der-alarmdruck-kommt-nicht-aus-dem-drucker-woran-liegt-das">Der Alarmdruck kommt nicht aus dem Drucker – woran liegt das?</h2>
-      <p>Der Alarmdruck funktioniert nur, wenn auf dem PC die lokale <strong>Silent-Print-App</strong> läuft und mit dem Browser verbunden ist. Prüfe in den <a href="verwaltung.html#einstellungen">Einstellungen → Alarmdruck</a>, ob dort „Verbunden“ angezeigt wird, und nutze den Button „Testseite drucken“. Bleibt die App unerreichbar, wird stillschweigend kein Alarmdruck erzeugt. Installationsanleitung: <a href="silent-print-einrichten.html">Alarmdruck einrichten</a>.</p>
-
-      <h2 id="wie-bekomme-ich-alarme-aufs-handy">Wie bekomme ich Alarme aufs Handy?</h2>
-      <p>Über <strong>Push-Benachrichtigungen (ntfy)</strong>: In den <a href="verwaltung.html#einstellungen">Einstellungen</a> ist ein ntfy-Topic für eure Leitstelle hinterlegt. Installiere die kostenlose ntfy-App und abonniere das dort genannte Topic – schon bekommst du bei jeder Alarmierung eine Push-Nachricht. Schritt-für-Schritt für Android und iOS: <a href="ntfy-einrichten.html">Push-Benachrichtigungen (ntfy)</a>.</p>
-
-      <h2 id="kann-ich-mich-mit-dem-smartphone-anmelden">Kann ich mich mit dem Smartphone anmelden?</h2>
-      <p>Ja, die Anwendung selbst funktioniert grundsätzlich auch im mobilen Browser. Die drei Arbeitsplätze (Dashboard, Einsatzerfassung, Alarmmonitor) sind aber vor allem für größere Bildschirme gedacht – für den mobilen Alltag empfiehlt sich eher der Push-Kanal über ntfy.</p>
-
-      <h2 id="wo-finde-ich-vergangene-einsaetze">Wo finde ich vergangene Einsätze?</h2>
-      <p>Auf dem <a href="dashboard.html">Dashboard</a> über den Link „Einsatz-Historie anzeigen“. Dort lässt sich zu jedem Einsatz ein PDF-Bericht herunterladen. Details unter <a href="einsatz-bearbeiten.html">Bericht &amp; Einsatz abschließen</a>.</p>
-
-      <h2 id="ich-habe-versehentlich-ein-falsches-fahrzeug-alarmiert-was-jetzt">Ich habe versehentlich ein falsches Fahrzeug alarmiert – was jetzt?</h2>
-      <p>Öffne den Einsatz über das Dashboard, entferne das Fahrzeug im Bearbeiten-Fenster und alarmiere bei Bedarf über „Fahrzeuge nachalarmieren“ das richtige. Details unter <a href="einsatz-bearbeiten.html">Bericht &amp; Einsatz abschließen</a>.</p>
-
-      <h2 id="diese-doku-ist-nicht-aktuell-oder-etwas-fehlt-wie-melde-ich-das">Diese Doku ist nicht aktuell oder etwas fehlt – wie melde ich das?</h2>
-      <p>Diese Dokumentation liegt öffentlich auf GitHub. Über die GitHub-Seite des Projekts kannst du Fehler melden oder Ergänzungen vorschlagen. Bei allgemeinen Fragen zur Nutzung hilft auch <a href="mailto:system@ils.ulm-eggingen.de">system@ils.ulm-eggingen.de</a> weiter.</p>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary><h2 id="ist-das-ein-echtes-notrufsystem">Ist das ein echtes Notrufsystem?</h2></summary>
+          <div class="faq-answer"><p>Nein. ILS Eggingen ist eine Übungsleitstelle für Simulationszwecke, z. B. in der Jugendfeuerwehr oder bei Veranstaltungen. Bei einem echten Notfall immer die 112 wählen.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><h2 id="ich-habe-mein-passwort-vergessen-was-tun">Ich habe mein Passwort vergessen. Was tun?</h2></summary>
+          <div class="faq-answer"><p>Wende dich an den Admin eurer Leitstelle – er kann dein Passwort in der <a href="verwaltung.html#benutzer">Benutzerverwaltung</a> zurücksetzen. Bist du selbst der Admin und kommst nicht mehr rein, hilft <a href="mailto:system@ils.ulm-eggingen.de">system@ils.ulm-eggingen.de</a> weiter.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><h2 id="warum-kann-ich-ein-fahrzeug-nicht-auswaehlen">Warum kann ich ein Fahrzeug nicht auswählen?</h2></summary>
+          <div class="faq-answer"><p>Entweder ist es als „außer Dienst“ (S6) markiert, oder es ist gerade einem anderen laufenden Einsatz zugeteilt. Beides wird direkt am Fahrzeug als Hinweistext angezeigt. Details unter <a href="fahrzeuge.html">Fahrzeuge &amp; Status</a>.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><h2 id="der-alarmdruck-kommt-nicht-aus-dem-drucker-woran-liegt-das">Der Alarmdruck kommt nicht aus dem Drucker – woran liegt das?</h2></summary>
+          <div class="faq-answer"><p>Der Alarmdruck funktioniert nur, wenn auf dem PC die lokale <strong>Silent-Print-App</strong> läuft und mit dem Browser verbunden ist. Prüfe in den <a href="verwaltung.html#einstellungen">Einstellungen → Alarmdruck</a>, ob dort „Verbunden“ angezeigt wird, und nutze den Button „Testseite drucken“. Bleibt die App unerreichbar, wird stillschweigend kein Alarmdruck erzeugt. Installationsanleitung: <a href="silent-print-einrichten.html">Alarmdruck einrichten</a>.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><h2 id="wie-bekomme-ich-alarme-aufs-handy">Wie bekomme ich Alarme aufs Handy?</h2></summary>
+          <div class="faq-answer"><p>Über <strong>Push-Benachrichtigungen (ntfy)</strong>: In den <a href="verwaltung.html#einstellungen">Einstellungen</a> ist ein ntfy-Topic für eure Leitstelle hinterlegt. Installiere die kostenlose ntfy-App und abonniere das dort genannte Topic – schon bekommst du bei jeder Alarmierung eine Push-Nachricht. Schritt-für-Schritt für Android und iOS: <a href="ntfy-einrichten.html">Push-Benachrichtigungen (ntfy)</a>.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><h2 id="kann-ich-mich-mit-dem-smartphone-anmelden">Kann ich mich mit dem Smartphone anmelden?</h2></summary>
+          <div class="faq-answer"><p>Ja, die Anwendung selbst funktioniert grundsätzlich auch im mobilen Browser. Die drei Arbeitsplätze (Dashboard, Einsatzerfassung, Alarmmonitor) sind aber vor allem für größere Bildschirme gedacht – für den mobilen Alltag empfiehlt sich eher der Push-Kanal über ntfy.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><h2 id="wo-finde-ich-vergangene-einsaetze">Wo finde ich vergangene Einsätze?</h2></summary>
+          <div class="faq-answer"><p>Auf dem <a href="dashboard.html">Dashboard</a> über den Link „Einsatz-Historie anzeigen“. Dort lässt sich zu jedem Einsatz ein PDF-Bericht herunterladen. Details unter <a href="einsatz-bearbeiten.html">Bericht &amp; Einsatz abschließen</a>.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><h2 id="ich-habe-versehentlich-ein-falsches-fahrzeug-alarmiert-was-jetzt">Ich habe versehentlich ein falsches Fahrzeug alarmiert – was jetzt?</h2></summary>
+          <div class="faq-answer"><p>Öffne den Einsatz über das Dashboard, entferne das Fahrzeug im Bearbeiten-Fenster und alarmiere bei Bedarf über „Fahrzeuge nachalarmieren“ das richtige. Details unter <a href="einsatz-bearbeiten.html">Bericht &amp; Einsatz abschließen</a>.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary><h2 id="diese-doku-ist-nicht-aktuell-oder-etwas-fehlt-wie-melde-ich-das">Diese Doku ist nicht aktuell oder etwas fehlt – wie melde ich das?</h2></summary>
+          <div class="faq-answer"><p>Diese Dokumentation liegt öffentlich auf GitHub. Über die GitHub-Seite des Projekts kannst du Fehler melden oder Ergänzungen vorschlagen. Bei allgemeinen Fragen zur Nutzung hilft auch <a href="mailto:system@ils.ulm-eggingen.de">system@ils.ulm-eggingen.de</a> weiter.</p></div>
+        </details>
+      </div>
 
       <div class="pagenav">
         <a class="prev" href="dashboard.html"><span class="pn-label">Zurück</span><span class="pn-title">← Dashboard</span></a>

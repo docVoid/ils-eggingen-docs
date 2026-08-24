@@ -402,42 +402,40 @@ figure.shot figcaption {
   .shot-row { grid-template-columns: 1fr; }
 }
 
-/* ---------- Document samples (Alarmdruck / Einsatzbericht) ---------- */
-.doc-sample {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  line-height: 1.55;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.4rem 1.6rem;
-  background: var(--bg-sunken);
-  margin: 1.4rem 0 1.8rem;
-  overflow-x: auto;
-}
-.doc-sample .ds-head {
+/* ---------- FAQ accordion ---------- */
+.faq-list { border-top: 1px solid var(--border); }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-item summary {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: baseline;
   gap: 1rem;
-  border-bottom: 2px solid var(--text);
-  padding-bottom: 0.7rem;
-  margin-bottom: 0.9rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  list-style: none;
 }
-.doc-sample .ds-title { font-size: 1.05rem; font-weight: 800; letter-spacing: 0.02em; color: var(--text); }
-.doc-sample .ds-meta { color: var(--text-muted); white-space: nowrap; }
-.doc-sample dl { display: grid; grid-template-columns: 120px 1fr; row-gap: 0.3rem; margin: 0 0 0.9rem; }
-.doc-sample dt { color: var(--text-muted); }
-.doc-sample dd { margin: 0; color: var(--text); }
-.doc-sample dd.strong { font-weight: 700; }
-.doc-sample .ds-subhead { font-weight: 700; color: var(--text); margin: 0.9rem 0 0.4rem; }
-.doc-sample table { width: 100%; border-collapse: collapse; font-size: 0.76rem; margin-top: 0.3rem; }
-.doc-sample th, .doc-sample td { text-align: left; padding: 0.3rem 0.6rem 0.3rem 0; border-bottom: 1px solid var(--border); white-space: nowrap; }
-.doc-sample th { color: var(--text-muted); font-weight: 700; }
-.doc-sample .ds-report p { color: var(--text); font-family: var(--font-sans); font-size: 0.86rem; margin: 0 0 0.6rem; }
-.doc-sample .ds-footer { margin-top: 1rem; padding-top: 0.7rem; border-top: 1px dashed var(--border-strong); color: var(--text-muted); font-size: 0.72rem; }
-@media (max-width: 560px) {
-  .doc-sample dl { grid-template-columns: 100px 1fr; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 650;
+  scroll-margin-top: 80px;
 }
+.faq-item summary::after {
+  content: "+";
+  flex-shrink: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+.faq-item[open] summary::after { content: "\2212"; }
+.faq-item summary:hover h2 { color: var(--primary); }
+.faq-answer { padding: 0 0 1.1rem; }
+.faq-answer p { margin: 0; }
 
 /* ---------- Table ---------- */
 .table-wrap { overflow-x: auto; margin: 1.4rem 0 1.8rem; border: 1px solid var(--border); border-radius: var(--radius-sm); }
