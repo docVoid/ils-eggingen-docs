@@ -1,146 +1,291 @@
 <!doctype html>
 <html lang="de">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Verwaltung (Admin) – ILS Eggingen Doku</title>
-<meta name="description" content="Fahrzeuge, Einsatzstichworte, Einstellungen und Benutzer verwalten – der Admin-Bereich der ILS Eggingen." />
-<link rel="canonical" href="https://ils.ulm-eggingen.de/doku/verwaltung" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="ILS Eggingen Doku" />
-<meta property="og:title" content="Verwaltung (Admin) – ILS Eggingen Doku" />
-<meta property="og:description" content="Fahrzeuge, Einsatzstichworte, Einstellungen und Benutzer verwalten – der Admin-Bereich der ILS Eggingen." />
-<meta property="og:url" content="https://ils.ulm-eggingen.de/doku/verwaltung" />
-<meta property="og:image" content="https://ils.ulm-eggingen.de/doku/assets/img/og-image.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:locale" content="de_DE" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Verwaltung (Admin) – ILS Eggingen Doku" />
-<meta name="twitter:description" content="Fahrzeuge, Einsatzstichworte, Einstellungen und Benutzer verwalten – der Admin-Bereich der ILS Eggingen." />
-<meta name="twitter:image" content="https://ils.ulm-eggingen.de/doku/assets/img/og-image.jpg" />
-<link rel="icon" type="image/png" href="assets/img/icon-192.png" />
-<link rel="apple-touch-icon" href="assets/img/icon-192.png" />
-<link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-<a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verwaltung (Admin) – ILS Eggingen Doku</title>
+    <meta
+      name="description"
+      content="Fahrzeuge, Einsatzstichworte, Einstellungen und Benutzer verwalten – der Admin-Bereich der ILS Eggingen."
+    />
+    <link rel="canonical" href="https://ils.ulm-eggingen.de/doku/verwaltung" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ILS Eggingen Doku" />
+    <meta
+      property="og:title"
+      content="Verwaltung (Admin) – ILS Eggingen Doku"
+    />
+    <meta
+      property="og:description"
+      content="Fahrzeuge, Einsatzstichworte, Einstellungen und Benutzer verwalten – der Admin-Bereich der ILS Eggingen."
+    />
+    <meta
+      property="og:url"
+      content="https://ils.ulm-eggingen.de/doku/verwaltung"
+    />
+    <meta
+      property="og:image"
+      content="https://ils.ulm-eggingen.de/doku/assets/img/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="de_DE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Verwaltung (Admin) – ILS Eggingen Doku"
+    />
+    <meta
+      name="twitter:description"
+      content="Fahrzeuge, Einsatzstichworte, Einstellungen und Benutzer verwalten – der Admin-Bereich der ILS Eggingen."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ils.ulm-eggingen.de/doku/assets/img/og-image.jpg"
+    />
+    <link rel="icon" type="image/png" href="assets/img/icon-192.png" />
+    <link rel="apple-touch-icon" href="assets/img/icon-192.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-<header class="topbar">
-  <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menü öffnen">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-  </button>
-  <a class="topbar-brand" href=".">
-    <img class="logo-badge" src="assets/img/icon-192.png" alt="" width="28" height="28" />
-    <span>ILS Eggingen</span>
-    <span class="brand-sub">Dokumentation</span>
-  </a>
-  <div class="topbar-spacer"></div>
-  <div class="topbar-actions">
-    <button class="icon-btn" id="theme-toggle" aria-label="Design umschalten">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2M12 19.5v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2.5 12h2M19.5 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
-    </button>
-    <a class="btn btn-primary btn-sm" href="zugang">Zugang beantragen</a>
-  </div>
-</header>
-
-<div class="shell">
-  <div class="sidebar-scrim" id="sidebar-scrim"></div>
-  <nav class="sidebar" aria-label="Dokumentation">
-    <div class="nav-group">
-      <div class="nav-group-title">Start</div>
-      <a class="nav-link" href=".">Übersicht</a>
-    </div>
-    <div class="nav-group">
-      <div class="nav-group-title">Erste Schritte</div>
-      <a class="nav-link" href="zugang">Zugang bekommen</a>
-      <a class="nav-link" href="erste-schritte">Anmelden &amp; Monitore</a>
-    </div>
-    <div class="nav-group">
-      <div class="nav-group-title">Leitstelle einrichten</div>
-      <a class="nav-link" href="verwaltung">Verwaltung (Admin)</a>
-      <a class="nav-link" href="rollen">Rollen &amp; Rechte</a>
-      <a class="nav-link" href="silent-print-einrichten">Alarmdruck einrichten</a>
-      <a class="nav-link" href="ntfy-einrichten">Push-Benachrichtigungen</a>
-    </div>
-    <div class="nav-group">
-      <div class="nav-group-title">Übungsbetrieb</div>
-      <a class="nav-link" href="einsatz-erfassen">Einsatz erfassen</a>
-      <a class="nav-link" href="einsatz-bearbeiten">Bericht &amp; Abschluss</a>
-      <a class="nav-link" href="fahrzeuge">Fahrzeuge &amp; Status</a>
-      <a class="nav-link" href="alarmmonitor">Alarmmonitor</a>
-      <a class="nav-link" href="dashboard">Dashboard</a>
-    </div>
-    <div class="nav-group">
-      <div class="nav-group-title">Hilfe</div>
-      <a class="nav-link" href="faq">Häufige Fragen</a>
-    </div>
-  </nav>
-
-  <main class="main" id="main">
-    <div class="content wide">
-      <span class="eyebrow">Leitstelle einrichten · nur Admin</span>
-      <h1 class="page-title">Verwaltung (Admin)</h1>
-      <p class="page-lede">Über „Konfiguration“ auf der Monitorauswahl erreicht ihr als Admin vier Bereiche, mit denen sich eure Leitstelle einrichten lässt – am besten gleich nach der ersten Anmeldung.</p>
-
-      <h2 id="fahrzeuge">Fahrzeuge</h2>
-      <p>Hier legst du Fahrzeuge an, bearbeitest Name und Funkrufname oder löschst nicht mehr genutzte Fahrzeuge. Der aktuelle FMS-Status ist zur Info sichtbar, geändert wird er aber über die Fahrzeugkarten auf dem <a href="dashboard">Dashboard</a> – nicht hier.</p>
-      <figure class="shot">
-        <img src="assets/img/verwaltung-fahrzeuge.png" alt="Verwaltung der Fahrzeuge mit Tabelle aus Name, Funkrufname und FMS-Status" loading="lazy" />
-        <figcaption>Fahrzeugverwaltung mit „+ Neues Fahrzeug“.</figcaption>
-      </figure>
-
-      <h2 id="stichworte">Einsatzstichworte</h2>
-      <p>Die Liste der Stichworte, die in der Einsatzerfassung vorgeschlagen werden, gruppiert nach Kategorie (Brand, Hilfeleistung, Rettung, Sonstiges). Neue Stichworte lassen sich einzeln anlegen oder komplett per <strong>CSV-Import</strong> einspielen; „CSV Export“ sichert den aktuellen Stand, „Alle löschen“ setzt die Liste zurück.</p>
-      <figure class="shot">
-        <img src="assets/img/verwaltung-stichworte.png" alt="Liste der Einsatzstichworte gruppiert nach Kategorie Brand, mit CSV-Export- und Import-Buttons" loading="lazy" />
-        <figcaption>Einsatzstichworte – gruppiert nach Kategorie.</figcaption>
-      </figure>
-
-      <h2 id="einstellungen">Einstellungen</h2>
-      <p>Zentrale Einstellungen der Leitstelle, in Abschnitten:</p>
-      <ul class="lead-list">
-        <li><strong>Erscheinungsbild</strong> – Standard-Theme (der Alarmmonitor bleibt davon unberührt immer dunkel).</li>
-        <li><strong>Audio-Einstellungen</strong> – Alarmton und Durchsagenton auswählen oder eigene Töne (MP3/WAV/OGG/WEBM) hochladen.</li>
-        <li><strong>Alarmdruck</strong> – Adresse der lokalen Silent-Print-App, Druckmodus (1× pro Einsatz / pro Fahrzeug / feste Anzahl) und ein Testdruck-Button. Installation der App: <a href="silent-print-einrichten">Alarmdruck einrichten</a>.</li>
-        <li><strong>Push-Benachrichtigungen (ntfy)</strong> – Server-URL und ein frei wählbares Topic (z. B. <code>deine-leitstelle-alarme</code>), über das Einsatzkräfte Alarme direkt aufs Handy bekommen. Einrichtung auf dem Handy: <a href="ntfy-einrichten">Push-Benachrichtigungen (ntfy)</a>.</li>
-        <li><strong>Station</strong> – Wachenadresse, die für die Routenberechnung auf dem Alarmmonitor genutzt wird.</li>
-        <li><strong>Wachen-Logo</strong> – Logo für den Alarmmonitor hochladen.</li>
-      </ul>
-      <figure class="shot">
-        <img src="assets/img/verwaltung-einstellungen.png" alt="Einstellungsseite mit Erscheinungsbild, Audio, Alarmdruck, Push-Benachrichtigungen, Station und Wachen-Logo" loading="lazy" />
-        <figcaption>Einstellungen – von Design bis Alarmdruck.</figcaption>
-      </figure>
-
-      <h2 id="benutzer">Benutzer</h2>
-      <p>Benutzerkonten eurer Leitstelle anlegen, bearbeiten, deaktivieren oder löschen – z. B. für weitere Betreuer oder für die Jugendlichen selbst. Beim Anlegen vergebt ihr Benutzername, ein Startpasswort und die Rolle (Admin, Disponent, Betrachter oder ReadOnly). Details zu den Rollen: <a href="rollen">Rollen &amp; Rechte</a>.</p>
-      <div class="shot-row">
-        <figure class="shot">
-          <img src="assets/img/verwaltung-benutzer.png" alt="Benutzerliste mit Benutzername, Rolle, Status und Erstellungsdatum" loading="lazy" />
-          <figcaption>Benutzerübersicht der eigenen Leitstelle.</figcaption>
-        </figure>
-        <figure class="shot">
-          <img src="assets/img/verwaltung-benutzer-neu.png" alt="Formular zum Anlegen eines neuen Benutzers mit Benutzername, Passwort und Rolle" loading="lazy" />
-          <figcaption>Neuen Benutzer anlegen.</figcaption>
-        </figure>
+    <header class="topbar">
+      <button
+        class="icon-btn menu-toggle"
+        id="menu-toggle"
+        aria-label="Menü öffnen"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+      <a class="topbar-brand" href=".">
+        <img
+          class="logo-badge"
+          src="assets/img/icon-192.png"
+          alt=""
+          width="28"
+          height="28"
+        />
+        <span>ILS Eggingen</span>
+        <span class="brand-sub">Dokumentation</span>
+      </a>
+      <div class="topbar-spacer"></div>
+      <div class="topbar-actions">
+        <button
+          class="icon-btn"
+          id="theme-toggle"
+          aria-label="Design umschalten"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="4.5" />
+            <path
+              d="M12 2.5v2M12 19.5v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2.5 12h2M19.5 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
+            />
+          </svg>
+        </button>
+        <a class="btn btn-primary btn-sm" href="zugang">Zugang beantragen</a>
       </div>
+    </header>
 
-      <div class="pagenav">
-        <a class="prev" href="erste-schritte"><span class="pn-label">Zurück</span><span class="pn-title">← Anmelden &amp; Monitore</span></a>
-        <a class="next" href="rollen"><span class="pn-label">Weiter</span><span class="pn-title">Rollen &amp; Rechte →</span></a>
-      </div>
+    <div class="shell">
+      <div class="sidebar-scrim" id="sidebar-scrim"></div>
+      <nav class="sidebar" aria-label="Dokumentation">
+        <div class="nav-group">
+          <div class="nav-group-title">Start</div>
+          <a class="nav-link" href=".">Übersicht</a>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Erste Schritte</div>
+          <a class="nav-link" href="zugang">Zugang bekommen</a>
+          <a class="nav-link" href="erste-schritte">Anmelden &amp; Monitore</a>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Leitstelle einrichten</div>
+          <a class="nav-link" href="verwaltung">Verwaltung (Admin)</a>
+          <a class="nav-link" href="rollen">Rollen &amp; Rechte</a>
+          <a class="nav-link" href="silent-print-einrichten"
+            >Alarmdruck einrichten</a
+          >
+          <a class="nav-link" href="ntfy-einrichten">Push-Benachrichtigungen</a>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Übungsbetrieb</div>
+          <a class="nav-link" href="einsatz-erfassen">Einsatz erfassen</a>
+          <a class="nav-link" href="einsatz-bearbeiten"
+            >Bericht &amp; Abschluss</a
+          >
+          <a class="nav-link" href="fahrzeuge">Fahrzeuge &amp; Status</a>
+          <a class="nav-link" href="alarmmonitor">Alarmmonitor</a>
+          <a class="nav-link" href="dashboard">Dashboard</a>
+        </div>
+        <div class="nav-group">
+          <div class="nav-group-title">Hilfe</div>
+          <a class="nav-link" href="faq">Häufige Fragen</a>
+        </div>
+      </nav>
+
+      <main class="main" id="main">
+        <div class="content wide">
+          <span class="eyebrow">Leitstelle einrichten · nur Admin</span>
+          <h1 class="page-title">Verwaltung (Admin)</h1>
+          <p class="page-lede">
+            Über „Konfiguration“ auf der Monitorauswahl erreicht ihr als Admin
+            vier Bereiche, mit denen sich eure Leitstelle einrichten lässt – am
+            besten gleich nach der ersten Anmeldung.
+          </p>
+
+          <h2 id="fahrzeuge">Fahrzeuge</h2>
+          <p>
+            Hier legst du Fahrzeuge an, bearbeitest Name und Funkrufname oder
+            löschst nicht mehr genutzte Fahrzeuge. Der aktuelle FMS-Status ist
+            zur Info sichtbar, geändert wird er aber über die Fahrzeugkarten auf
+            dem <a href="dashboard">Dashboard</a> – nicht hier.
+          </p>
+          <figure class="shot">
+            <img
+              src="assets/img/verwaltung-fahrzeuge.png"
+              alt="Verwaltung der Fahrzeuge mit Tabelle aus Name, Funkrufname und FMS-Status"
+              loading="lazy"
+            />
+            <figcaption>Fahrzeugverwaltung mit „+ Neues Fahrzeug“.</figcaption>
+          </figure>
+
+          <h2 id="stichworte">Einsatzstichworte</h2>
+          <p>
+            Die Liste der Stichworte, die in der Einsatzerfassung vorgeschlagen
+            werden, gruppiert nach Kategorie (Brand, Hilfeleistung, Rettung,
+            Sonstiges). Neue Stichworte lassen sich einzeln anlegen oder
+            komplett per CSV-Import einspielen; „CSV Export“ sichert den
+            aktuellen Stand, „Alle löschen“ setzt die Liste zurück.
+          </p>
+          <figure class="shot">
+            <img
+              src="assets/img/verwaltung-stichworte.png"
+              alt="Liste der Einsatzstichworte gruppiert nach Kategorie Brand, mit CSV-Export- und Import-Buttons"
+              loading="lazy"
+            />
+            <figcaption>
+              Einsatzstichworte – gruppiert nach Kategorie.
+            </figcaption>
+          </figure>
+
+          <h2 id="einstellungen">Einstellungen</h2>
+          <p>Zentrale Einstellungen der Leitstelle, in Abschnitten:</p>
+          <ul class="lead-list">
+            <li>
+              <strong>Erscheinungsbild</strong> – Standard-Theme (der
+              Alarmmonitor bleibt davon unberührt immer dunkel).
+            </li>
+            <li>
+              <strong>Audio-Einstellungen</strong> – Alarmton und Durchsagenton
+              auswählen oder eigene Töne (MP3/WAV/OGG/WEBM) hochladen.
+            </li>
+            <li>
+              <strong>Alarmdruck</strong> – Adresse der lokalen
+              Silent-Print-App, Druckmodus (1× pro Einsatz / pro Fahrzeug /
+              feste Anzahl) und ein Testdruck-Button. Installation der App:
+              <a href="silent-print-einrichten">Alarmdruck einrichten</a>.
+            </li>
+            <li>
+              <strong>Push-Benachrichtigungen (ntfy)</strong> – Server-URL und
+              ein frei wählbares Topic (z. B.
+              <code>deine-leitstelle-alarme</code>), über das Einsatzkräfte
+              Alarme direkt aufs Handy bekommen. Einrichtung auf dem Handy:
+              <a href="ntfy-einrichten">Push-Benachrichtigungen (ntfy)</a>.
+            </li>
+            <li>
+              <strong>Station</strong> – Wachenadresse, die für die
+              Routenberechnung auf dem Alarmmonitor genutzt wird.
+            </li>
+            <li>
+              <strong>Wachen-Logo</strong> – Logo für den Alarmmonitor
+              hochladen.
+            </li>
+          </ul>
+          <figure class="shot">
+            <img
+              src="assets/img/verwaltung-einstellungen.png"
+              alt="Einstellungsseite mit Erscheinungsbild, Audio, Alarmdruck, Push-Benachrichtigungen, Station und Wachen-Logo"
+              loading="lazy"
+            />
+            <figcaption>Einstellungen – von Design bis Alarmdruck.</figcaption>
+          </figure>
+
+          <h2 id="benutzer">Benutzer</h2>
+          <p>
+            Benutzerkonten eurer Leitstelle anlegen, bearbeiten, deaktivieren
+            oder löschen – z. B. für weitere Betreuer oder für die Jugendlichen
+            selbst. Beim Anlegen vergebt ihr Benutzername, ein Startpasswort und
+            die Rolle (Admin, Disponent, Betrachter oder ReadOnly). Details zu
+            den Rollen: <a href="rollen">Rollen &amp; Rechte</a>.
+          </p>
+          <div class="shot-row">
+            <figure class="shot">
+              <img
+                src="assets/img/verwaltung-benutzer.png"
+                alt="Benutzerliste mit Benutzername, Rolle, Status und Erstellungsdatum"
+                loading="lazy"
+              />
+              <figcaption>Benutzerübersicht der eigenen Leitstelle.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img
+                src="assets/img/verwaltung-benutzer-neu.png"
+                alt="Formular zum Anlegen eines neuen Benutzers mit Benutzername, Passwort und Rolle"
+                loading="lazy"
+              />
+              <figcaption>Neuen Benutzer anlegen.</figcaption>
+            </figure>
+          </div>
+
+          <div class="pagenav">
+            <a class="prev" href="erste-schritte"
+              ><span class="pn-label">Zurück</span
+              ><span class="pn-title">← Anmelden &amp; Monitore</span></a
+            >
+            <a class="next" href="rollen"
+              ><span class="pn-label">Weiter</span
+              ><span class="pn-title">Rollen &amp; Rechte →</span></a
+            >
+          </div>
+        </div>
+        <aside class="page-toc" id="page-toc"></aside>
+      </main>
     </div>
-    <aside class="page-toc" id="page-toc"></aside>
-  </main>
-</div>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <span><a href="https://ils.ulm-eggingen.de">ILS Eggingen</a> · Leitstellensystem v1.0 © <span id="footer-year">2026</span></span>
-    <span>Programmiert mit ❤️ von <a href="https://github.com/docVoid/" target="_blank" rel="noopener noreferrer">void</a></span>
-  </div>
-</footer>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span
+          ><a href="https://ils.ulm-eggingen.de">ILS Eggingen</a> ·
+          Leitstellensystem v1.0 © <span id="footer-year">2026</span></span
+        >
+        <span
+          >Programmiert mit ❤️ von
+          <a
+            href="https://github.com/docVoid/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >void</a
+          ></span
+        >
+      </div>
+    </footer>
 
-<script src="assets/js/site.js"></script>
-</body>
+    <script src="assets/js/site.js"></script>
+  </body>
 </html>
