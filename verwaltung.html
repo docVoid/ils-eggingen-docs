@@ -186,22 +186,22 @@
 
           <h3 id="stichworte-csv-format">Format der CSV-Datei</h3>
           <p>
-            Kein Komma, kein Semikolon, keine Kopfzeile – einfach eine
-            Kategorie pro Zeile, gefolgt von ihren Stichworten (je eins pro
-            Zeile), bis die nächste Kategorie beginnt. Leerzeilen dazwischen
-            sind rein optisch und werden beim Import ignoriert.
+            Kein Komma, kein Semikolon, keine Kopfzeile – einfach eine Kategorie
+            pro Zeile, gefolgt von ihren Stichworten (je eins pro Zeile), bis
+            die nächste Kategorie beginnt. Leerzeilen dazwischen sind rein
+            optisch und werden beim Import ignoriert.
           </p>
           <ul class="lead-list">
             <li>
               <strong>Kategorie-Zeilen</strong> müssen exakt (Groß-/
-              Kleinschreibung ist egal)
-              <code>Brand</code>, <code>Hilfeleistung</code>,
-              <code>Rettung</code> oder <code>Sonstiges</code> lauten – andere
-              Kategorienamen gibt es nicht.
+              Kleinschreibung ist egal) <code>Brand</code>,
+              <code>Hilfeleistung</code>, <code>Rettung</code> oder
+              <code>Sonstiges</code> lauten – andere Kategorienamen gibt es
+              nicht.
             </li>
             <li>
-              Zeilen <strong>vor</strong> der ersten erkannten Kategorie
-              werden stillschweigend übersprungen.
+              Zeilen <strong>vor</strong> der ersten erkannten Kategorie werden
+              stillschweigend übersprungen.
             </li>
             <li>
               Stichworte, die es in ihrer Kategorie schon gibt, werden beim
@@ -212,20 +212,21 @@
               Exporte im Windows-Format werden ebenfalls erkannt).
             </li>
           </ul>
-          <pre><code>Brand
+          <pre>
+            <code>
+Brand
 B0 Brand
-B2 Brand Gebäude
-
+B2 Brand G
 Hilfeleistung
 H0 Hilfeleistung
-H2 Hilfeleistung
-
+H2 Hilfele
 Rettung
 R0 Rettung
-R2 Rettung
-
+R2 R
 Sonstiges
-S Testeinsatz Fw</code></pre>
+S Testeinsatz Fw
+            </code>
+          </pre>
           <p>
             <a
               class="btn btn-ghost btn-sm"
