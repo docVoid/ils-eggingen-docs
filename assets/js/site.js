@@ -28,6 +28,9 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     updateThemeIcon();
+
+    var yearEl = document.getElementById("footer-year");
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
     var themeBtn = document.getElementById("theme-toggle");
     if (themeBtn) {
       themeBtn.addEventListener("click", function () {
