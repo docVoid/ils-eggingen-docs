@@ -41,7 +41,7 @@ Jede Seite ist eigenständiges HTML (Kopf-/Seitenleiste dupliziert sich bewusst 
 
 ## Zugang zur Leitstelle
 
-Zugangsdaten für die eigentliche Anwendung gibt es **nicht** hier, sondern nur auf Anfrage bei **system@ils.ulm-eggingen.de** – siehe [Zugang bekommen](https://ils.ulm-eggingen.de/doku/zugang.html).
+Zugangsdaten für die eigentliche Anwendung gibt es **nicht** hier, sondern nur auf Anfrage bei **system@ils.ulm-eggingen.de** – siehe [Zugang bekommen](https://ils.ulm-eggingen.de/doku/zugang).
 
 ## Deployment
 

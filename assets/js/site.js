@@ -53,10 +53,10 @@
     });
 
     // Mark active nav link
-    var path = location.pathname.split("/").pop() || "index.html";
+    var path = location.pathname.split("/").pop() || "";
     document.querySelectorAll(".sidebar .nav-link").forEach(function (a) {
       var href = a.getAttribute("href");
-      if (href === path || (path === "" && href === "index.html")) {
+      if (href === path || (path === "" && href === ".")) {
         a.classList.add("active");
       }
     });

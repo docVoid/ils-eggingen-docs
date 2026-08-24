@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ils.ulm-eggingen.de/doku/index.html</loc><priority>1.0</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/zugang.html</loc><priority>0.9</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/erste-schritte.html</loc><priority>0.8</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/verwaltung.html</loc><priority>0.8</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/rollen.html</loc><priority>0.7</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/silent-print-einrichten.html</loc><priority>0.7</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/ntfy-einrichten.html</loc><priority>0.7</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/einsatz-erfassen.html</loc><priority>0.8</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/einsatz-bearbeiten.html</loc><priority>0.8</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/fahrzeuge.html</loc><priority>0.7</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/alarmmonitor.html</loc><priority>0.6</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/dashboard.html</loc><priority>0.6</priority></url>
-  <url><loc>https://ils.ulm-eggingen.de/doku/faq.html</loc><priority>0.6</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/</loc><priority>1.0</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/zugang</loc><priority>0.9</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/erste-schritte</loc><priority>0.8</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/verwaltung</loc><priority>0.8</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/rollen</loc><priority>0.7</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/silent-print-einrichten</loc><priority>0.7</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/ntfy-einrichten</loc><priority>0.7</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/einsatz-erfassen</loc><priority>0.8</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/einsatz-bearbeiten</loc><priority>0.8</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/fahrzeuge</loc><priority>0.7</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/alarmmonitor</loc><priority>0.6</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/dashboard</loc><priority>0.6</priority></url>
+  <url><loc>https://ils.ulm-eggingen.de/doku/faq</loc><priority>0.6</priority></url>
 </urlset>
