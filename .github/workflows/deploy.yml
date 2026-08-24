@@ -11,5 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Container neu starten
-        run: docker compose up -d
+      # Container mountet dieses Checkout-Verzeichnis direkt (read-only) als Docroot,
+      # neue Inhalte sind sofort da – up -d greift nur bei Compose-/Image-Änderungen.
+      - name: Container aktuell halten
+        run: docker compose up -d --remove-orphans
