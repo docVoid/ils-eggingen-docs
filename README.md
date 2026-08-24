@@ -4,7 +4,7 @@ Benutzerhandbuch für [ILS Eggingen](https://ils.ulm-eggingen.de), eine **Übung
 
 **Es geht hier nicht um Betrieb, Server oder Docker** – das ist bewusst kein Teil dieser Doku. Stattdessen: Zugang beantragen, die eigene Leitstelle einrichten, Übungseinsätze erfassen und alarmieren, Berichte schreiben und mehr – Schritt für Schritt, mit Screenshots.
 
-🔗 **Live:** https://docvoid.github.io/ils-eggingen-docs/ (perspektivisch auch unter `ils.ulm-eggingen.de/doku`)
+🔗 **Live:** https://ils.ulm-eggingen.de/doku/
 
 ## Struktur
 
@@ -41,4 +41,4 @@ Jede Seite ist eigenständiges HTML (Kopf-/Seitenleiste dupliziert sich bewusst 
 
 ## Zugang zur Leitstelle
 
-Zugangsdaten für die eigentliche Anwendung gibt es **nicht** hier, sondern nur auf Anfrage bei **system@ils.ulm-eggingen.de** – siehe [Zugang bekommen](https://docvoid.github.io/ils-eggingen-docs/zugang.html).
+Zugangsdaten für die eigentliche Anwendung gibt es **nicht** hier, sondern nur auf Anfrage bei **system@ils.ulm-eggingen.de** – siehe [Zugang bekommen](https://ils.ulm-eggingen.de/doku/zugang.html).

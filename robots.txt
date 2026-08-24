@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://docvoid.github.io/ils-eggingen-docs/sitemap.xml
+Sitemap: https://ils.ulm-eggingen.de/doku/sitemap.xml
