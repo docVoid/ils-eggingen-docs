@@ -1,0 +1,15 @@
+name: Deploy Doku
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, ils-docs-pi]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Container neu starten
+        run: docker compose up -d

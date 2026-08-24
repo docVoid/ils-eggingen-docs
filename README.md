@@ -42,3 +42,7 @@ Jede Seite ist eigenständiges HTML (Kopf-/Seitenleiste dupliziert sich bewusst 
 ## Zugang zur Leitstelle
 
 Zugangsdaten für die eigentliche Anwendung gibt es **nicht** hier, sondern nur auf Anfrage bei **system@ils.ulm-eggingen.de** – siehe [Zugang bekommen](https://ils.ulm-eggingen.de/doku/zugang.html).
+
+## Deployment
+
+Läuft als eigener, schlanker `nginx:alpine`-Container (`docker-compose.yml`, Konfiguration in `deploy/nginx.conf`) auf demselben Server wie die Anwendung, aber komplett getrennt von deren Docker-Setup – eingebunden wird nur über eine `/doku/`-Route im bestehenden Reverse-Proxy. Push auf `main` deployt automatisch per GitHub Actions (`.github/workflows/deploy.yml`) über einen self-hosted Runner.
