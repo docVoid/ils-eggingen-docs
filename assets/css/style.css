@@ -123,14 +123,20 @@ code { font-family: var(--font-mono); background: var(--code-bg); padding: 0.15e
 
 .topbar-brand {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.5rem;
   font-weight: 700;
   font-size: 0.98rem;
   color: var(--text);
 }
 .topbar-brand:hover { text-decoration: none; }
-.topbar-brand .logo-badge { display: none; }
+.topbar-brand .logo-badge {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  flex-shrink: 0;
+}
 .topbar-brand .brand-sub {
   font-size: 0.82rem;
   font-weight: 400;
