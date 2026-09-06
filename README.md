@@ -14,6 +14,7 @@ Reines, statisches HTML/CSS/JS ohne Build-Schritt oder Abhängigkeiten – bewus
 index.html              Startseite
 zugang.html              Zugang bekommen
 erste-schritte.html      Anmelden & Monitore
+konto.html               Konto (Theme, Passwort, App installieren)
 einsatz-erfassen.html    Einsatz erfassen & alarmieren
 einsatz-bearbeiten.html  Bericht & Einsatz abschließen
 fahrzeuge.html           Fahrzeuge & FMS-Status
