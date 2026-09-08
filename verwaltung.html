@@ -113,6 +113,7 @@
           <div class="nav-group-title">Erste Schritte</div>
           <a class="nav-link" href="zugang">Zugang bekommen</a>
           <a class="nav-link" href="erste-schritte">Anmelden &amp; Monitore</a>
+          <a class="nav-link" href="konto">Konto</a>
         </div>
         <div class="nav-group">
           <div class="nav-group-title">Leitstelle einrichten</div>
@@ -146,7 +147,9 @@
           <p class="page-lede">
             Über „Konfiguration“ auf der Monitorauswahl erreicht ihr als Admin
             vier Bereiche, mit denen sich eure Leitstelle einrichten lässt – am
-            besten gleich nach der ersten Anmeldung.
+            besten gleich nach der ersten Anmeldung. Dort liegt außerdem der
+            Tab <a href="konto">Konto</a> mit persönlichen Einstellungen, den
+            jede Person unabhängig von ihrer Rolle sieht.
           </p>
 
           <h2 id="fahrzeuge">Fahrzeuge</h2>
@@ -248,17 +251,14 @@
           </div>
 
           <h2 id="einstellungen">Einstellungen</h2>
-          <p>Zentrale Einstellungen der Leitstelle, in Abschnitten:</p>
+          <p>
+            Zentrale, leitstellenweite Einstellungen – für alle Benutzer gleich,
+            nur von Admins änderbar. Persönliche Einstellungen wie Theme oder
+            Passwort liegen separat unter <a href="konto">Konto</a>. Rollen ohne
+            Zugriff auf diese Seite (z. B. Betrachter) sehen hier nur einen
+            Hinweis auf „Konto“ statt einer leeren Seite. In Abschnitten:
+          </p>
           <ul class="lead-list">
-            <li>
-              <strong>Erscheinungsbild</strong> – Standard-Theme (der
-              Alarmmonitor bleibt davon unberührt immer dunkel).
-            </li>
-            <li>
-              <strong>App installieren</strong> – ILS Eggingen als eigenständige
-              Desktop-App installieren, siehe
-              <a href="#pwa-installieren">weiter unten</a>.
-            </li>
             <li>
               <strong>Audio-Einstellungen</strong> – Alarmton und Durchsagenton
               auswählen oder eigene Töne (MP3/WAV/OGG/WEBM) hochladen.
@@ -288,66 +288,25 @@
           <figure class="shot">
             <img
               src="assets/img/verwaltung-einstellungen.png"
-              alt="Einstellungsseite mit Erscheinungsbild, Audio, Alarmdruck, Push-Benachrichtigungen, Station und Wachen-Logo"
+              alt="Einstellungsseite mit Audio, Alarmdruck, Push-Benachrichtigungen, Station und Wachen-Logo"
               loading="lazy"
             />
-            <figcaption>Einstellungen – von Design bis Alarmdruck.</figcaption>
+            <figcaption>Einstellungen – Audio, Alarmdruck, Push, Station, Logo.</figcaption>
           </figure>
-
-          <h3 id="pwa-installieren">App installieren (Windows)</h3>
-          <p>
-            ILS Eggingen lässt sich als eigenständige Desktop-App installieren –
-            ohne Adressleiste und Tabs, mit eigenem Fenster und Icon in
-            Startmenü und Taskleiste. Das passiert komplett im Browser (Chrome
-            oder Edge); es ist keine separate Installationsdatei nötig und
-            nichts, was ein Admin einmalig für alle einrichtet – jede Person
-            macht das für sich selbst, auf jedem PC einmal.
-          </p>
-          <ol class="step-list">
-            <li>
-              <h3>„Als App installieren“ klicken</h3>
-              <p>
-                In den Einstellungen im Abschnitt „App installieren“ – oder
-                alternativ über das Installieren-Symbol direkt in der
-                Adressleiste des Browsers, falls vorhanden.
-              </p>
-            </li>
-            <li>
-              <h3>Im Browser-Dialog bestätigen</h3>
-              <p>
-                Chrome bzw. Edge zeigen einen Dialog mit Name und Adresse der
-                App – mit „Install“ (bzw. „Installieren“) bestätigen.
-              </p>
-              <figure class="shot">
-                <img
-                  src="assets/img/verwaltung-pwa-installieren.png"
-                  alt="Einstellungsseite mit Karte „App installieren“ und Chrome-Installationsdialog für ILS Eggingen – Leitstellensystem"
-                  loading="lazy"
-                />
-                <figcaption>
-                  „Als App installieren“ und der Bestätigungsdialog des
-                  Browsers.
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <h3>Fertig</h3>
-              <p>
-                ILS Eggingen öffnet sich ab jetzt in einem eigenen Fenster und
-                lässt sich über Startmenü oder Taskleiste starten – praktisch,
-                um z. B. Dashboard und Alarmmonitor als getrennte Fenster auf
-                unterschiedlichen Bildschirmen offen zu haben.
-              </p>
-            </li>
-          </ol>
 
           <h2 id="benutzer">Benutzer</h2>
           <p>
             Benutzerkonten eurer Leitstelle anlegen, bearbeiten, deaktivieren
             oder löschen – z. B. für weitere Betreuer oder für die Jugendlichen
             selbst. Beim Anlegen vergebt ihr Benutzername, ein Startpasswort und
-            die Rolle (Admin, Disponent, Betrachter oder ReadOnly). Details zu
-            den Rollen: <a href="rollen">Rollen &amp; Rechte</a>.
+            die Rolle (Admin, Disponent oder Betrachter). Details zu den
+            Rollen: <a href="rollen">Rollen &amp; Rechte</a>.
+          </p>
+          <p>
+            Über „Bearbeiten“ lässt sich das Passwort eines Benutzers jederzeit
+            zurücksetzen – praktisch, wenn jemand sein Passwort vergessen hat.
+            Jede Person kann ihr Passwort außerdem selbst ändern, siehe
+            <a href="konto">Konto</a>.
           </p>
           <div class="shot-row">
             <figure class="shot">
@@ -369,9 +328,9 @@
           </div>
 
           <div class="pagenav">
-            <a class="prev" href="erste-schritte"
+            <a class="prev" href="konto"
               ><span class="pn-label">Zurück</span
-              ><span class="pn-title">← Anmelden &amp; Monitore</span></a
+              ><span class="pn-title">← Konto</span></a
             >
             <a class="next" href="rollen"
               ><span class="pn-label">Weiter</span
